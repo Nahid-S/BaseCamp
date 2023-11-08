@@ -1,0 +1,17 @@
+<resources>
+
+
+    <!-- Style for Spinner text appearance -->
+    <style name="SpinnerTextStyle">
+        <item name="android:textColor">@color/spinner_text_color</item>
+    </style>
+
+    <!-- Style for Spinner popup (dropdown) appearance -->
+    <style name="SpinnerDropdownStyle">
+        <item name="android:background">@color/spinner_dropdown_background</item>
+        <item name="android:textColor">@color/spinner_dropdown_text_color</item>
+    </style>
+
+
+
+</resources>

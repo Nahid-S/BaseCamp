@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid Shape (your content) -->
+    <item android:top="1dp" android:right="12dp" android:left="12dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black" />
+            <corners android:bottomRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:topLeftRadius="10dp"/><!-- Set your solid color here -->
+        </shape>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pred" /> <!-- Set your solid color here -->
+        </shape>
+    </item>
+    <!-- Black Shadow -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:bottomRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:topLeftRadius="10dp"/>
+
+        </shape>
+    </item>
+</layer-list>

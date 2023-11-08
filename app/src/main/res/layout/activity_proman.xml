@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".proman">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customdrop"
+        android:padding="5dp"
+        android:src="@drawable/mainlogom01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/textViewPronunciation"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="50dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editTextWord"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_margin="25dp"
+            android:inputType="text"
+            android:hint="Enter a word" />
+
+        <Button
+            android:id="@+id/buttonPronounce"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Pronounce"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/customdrop5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Buttons for controlling speech rate -->
+            <Button
+                android:id="@+id/buttonSlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slow"
+                android:background="@drawable/customdrop5"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/buttonNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:background="@drawable/customdrop5"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/buttonFast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fast"
+                android:background="@drawable/customdrop5"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Buttons for language settings -->
+            <Button
+                android:id="@+id/buttonEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:background="@drawable/customdrop5"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/buttonBritish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="British"
+                android:background="@drawable/customdrop5"
+                android:layout_marginEnd="10dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/buttonIndia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="India"
+                android:background="@drawable/customdrop5"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

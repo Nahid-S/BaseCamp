@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309171023879",
+    "project_id": "basecamp-78a9c",
+    "storage_bucket": "basecamp-78a9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309171023879:android:3265a14d5ac4856204baa2",
+        "android_client_info": {
+          "package_name": "com.example.pikachu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABkDsZZgQtXF1YtGhYBX99qYslDd142vw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

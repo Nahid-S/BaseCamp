@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="pred">#FF0040</color>
+    <color name="cyan">#00ABFB</color>
+
+    <color name="spinner_text_color">#FFFFFF</color> <!-- Replace with your text color -->
+    <color name="spinner_dropdown_background">#FF0040</color> <!-- Replace with your dropdown background color -->
+    <color name="spinner_dropdown_text_color">#FFFFFF</color> <!-- Replace with your dropdown text color -->
+    <color name="default_spinner_text_color">#00ABFB</color>
+
+
+</resources>

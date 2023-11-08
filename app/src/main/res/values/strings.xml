@@ -1,0 +1,208 @@
+<resources>
+    <string name="app_name" translatable="false">My English</string>
+    <string-array name="questions_array">
+        <item>Select one</item>
+        <item>ques1</item>
+        <item>ques2</item>
+        <!-- Add more questions as needed -->
+    </string-array>
+
+    <string-array name="questions">
+
+        <item>You’re at Level 1. I’m going to ask you some questions about yourself. (Click Next)</item>
+        <item> 1. Are you a student or do you work now?</item>
+        <item> 2. Why did you choose this course/job?</item>
+        <item> 3. Talk about your daily routine.</item>
+        <item> 4. Is there anything about your course/job you would like to change?</item>
+        <item> 5. I’d like to move on and ask you some questions about shopping.</item>
+        <item> Who does most of the shopping in your household? (Click Next)</item>
+        <item> 1. What type of shopping do you like? (Why?)</item>
+        <item> 2. Is shopping a popular activity in your country? (Why/why not?)</item>
+        <item> 3. What type of shops do teenagers like best in your country?</item>
+        <item>Now Let’s talk about films. (Click Next)</item>
+        <item> 1. How often do you go to the cinema?</item>
+        <item> 2. What type of films don’t you like? (Why not?)</item>
+
+        <item> You’re at Level 2. Again, I’m going to ask you some questions about yourself. (Click Next)</item>
+        <item> Let’s talk about your hometown. (Click Next)</item>
+        <item> 1. What kind of place is your hometown?</item>
+        <item> 2. What do young people do for entertainment in your hometown?</item>
+        <item> 3. What is the worst thing about living in your hometown? (Why?)</item>
+        <item> I’d like to move on and ask you some questions about tourism in your country. (Click Next)</item>
+        <item> 1. What should a visitor see and do in your country?</item>
+        <item> 2. Are there any traditional art or music that you would recommend? (Why?)</item>
+        <item> 3. Tell me about the kind of visitor who come to your country.</item>
+        <item> Let’s move on and talk about being on time for appointments. (Click Next)</item>
+        <item> 1. Is being late acceptable in your culture? (Why/why not?)</item>
+        <item> 2. Are you ever late for appointments? (Why/why not?)</item>
+        <item> 3. What type of excuses do you think are alright for lateness?</item>
+        <item> 4. How do you feel when someone is late for an appointment with you?</item>
+
+        <item> You’re at Level 3. Again, I’m going to ask you some questions about yourself. (Click Next)</item>
+        <item> Lets talk about shopping. (Click Next)</item>
+        <item> 1. Do you enjoy shopping?</item>
+        <item> 2. How often do you go shopping and what do you buy?</item>
+        <item> 3. So you prefer to go shopping alone or with other people? (Why?)</item>
+        <item> I’d like to move on and ask you some questions about food. (Click Next)</item>
+        <item> 1. What is you favourite food? (Why?)</item>
+        <item> 2. What kind of restaurants do you like to eat out at?</item>
+        <item> 3. What would your perfect meal be?</item>
+        <item> I’d like to talk now about your hobbies. (Click Next)</item>
+        <item> 1. Tell me about any hobbies you have.</item>
+        <item> 2. Are there any hobbies you would like to have in the future?</item>
+        <item> 3. Do you think hobbies should be relaxing or should they be exciting? (Why?)</item>
+
+        <item> You’re at Level 4. Again, I’m going to ask you some questions about yourself. (Click Next)</item>
+        <item> First I’d like to ask about your hometown. (Click Next)</item>
+        <item> 1. What kind of place is your hometown?</item>
+        <item> 2. Tell me about the most interesting place in your hometown.</item>
+        <item> 3. What changes would you like to make to your hometown?</item>
+        <item> Now let’s move on to talk about animals. (Click Next)</item>
+        <item> 1. What kinds of animals are popular pets in your country? Why?</item>
+        <item> 2. How are animals in your country used for work?</item>
+        <item> 3. Are there any animals in your country that have special significance?</item>
+        <item> Let’s talk about travel. (Click Next)</item>
+        <item> 1. How easy is it to travel in your country?</item>
+        <item> 2. What form of transport is the most popular? Why?</item>
+        <item> 3. Are there any parts of your country that are difficult to travel to? Why / Why not?</item>
+
+        <!-- res ’ Add more questions as needed -->
+    </string-array>
+
+    <string-array name="questions12">
+
+        <item> You’re at Level 1. </item>
+        <item> I’m going to give you a topic and I’d like you to talk about it for 1–2 minutes.</item>
+        <item> Before you talk you’ll have one minute to think about what you are going to say and you can make notes if you wish. Do you understand?</item>
+        <item> I’d like you to Describe an important event in your life.</item>
+        <item> Describe an important event in your life.\n
+        You should say:\n
+        • When it happened\n
+        • Who you were with\n
+        • What happened</item>
+        <item> And explain why you feel it was important.
+        Follow up questions:\n
+        1. Do you still think about this event often?\n
+        2. Can the other people involved remember this event?</item>
+
+        <item> Great! You’re at Level 2. (Click Next)</item>
+        <item> Your topic: Describe something you own which is very important to you.</item>
+        <item>Describe something you own which is very important to you.\n
+        You should say:\n
+        • What you use it for\n
+        • How long you have had it\n
+        • Where you got it from</item>
+        <item>And explain why it is so important to you.
+        Follow up questions:\n
+        1. Is it valuable in terms of money?\n
+        2. Would it be easy to replace?</item>
+
+        <item> Great! You’re at Level 3. (Click Next)</item>
+        <item> Your topic:Describe something you own which is very important to you.</item>
+        <item>Describe a course you have done that you found useful:
+        You should say:\n
+        • What you learnt\n
+        • What you enjoyed about the course\n
+        • What you did’t enjoy</item>
+        <item>And explain why it was useful to you.
+        Follow up questions:\n
+        1. Are you in touch with anyone from the course now?\n
+        2. Would you like to go on a course like this again?</item>
+
+        <item> Great! You’re at Level 4. (Click Next)</item>
+        <item> Your topic:Describe an environmental problem that has occurred in your country.\n
+        You should say:\n
+        • The cause of the problem\n
+        • What effect it has had on your country\n
+        • The steps, if any, that have been taken to solve this\n
+        Explain why you think this problem is so important to solve.</item>
+        <item>Follow up questions:\n
+        1. Are other people concerned about this problem?\n
+        2. Do you talk about it with your friends?</item>
+
+        <!-- Add more questions as needed -->
+    </string-array>
+
+    <string-array name="questions13">
+
+        <item> Great! You’re at Level 1. (Click Next)</item>
+        <item>We ’ve been talking about an important event in your life, and I ’d now like to ask you some questions related to this.</item>
+        <item>1. What days are important in your country?\n</item>
+        <item>2. Why it is important to have national celebrations?\n</item>
+        <item>3. How is the way your national celebrations are celebrated now different from the way they were celebrated in the past?\n</item>
+        <item>4. Do you think any new national celebrations will come into being in the future?\n</item>
+        <item>5. Are there any celebrations from other countries that you celebrate in your country?\n</item>
+        <item>6. What are the benefits of having events that many people around the world are celebrating on the same day?\n</item>
+
+        <item> Great! You’re at Level 2. (Click Next)</item>
+        <item>We ’ve been talking about something you own which is very important to you, and I ’d now like to ask you some questions related to this.</item>
+        <item>First, lets consider values and the way they change.\n</item>
+        <item>1. What kinds of possessions give status to people in your country?\n</item>
+        <item>2. Has it always been the same or were different possessions thought of as valuable in the past?\n</item>
+        <item>3. Why do you think people need to show their status in society?\n</item>
+        <item>Now we ’ll discuss the role of advertising.\n</item>
+        <item>1. Do you think advertising influences what people buy? \n</item>
+        <item>2. Do advertisements give correct information, or do they encourage people to buy things that they may not need? \n</item>
+        <item>3. Is advertising really necessary in modern society?</item>
+
+        <item> Great! You’re at Level 3. (Click Next)</item>
+        <item>We ’ve been talking about a course you have done that you found useful and I ’d now like to ask you some questions related to this.</item>
+        <item>First, lets consider homework.. \n</item>
+        <item>1. Do you think it is important that children are given homework? \n</item>
+        <item>2. How much homework should they be given? \n</item>
+        <item>3. Do you think parents should help their children with their homework or should it be done alone? \n</item>
+        <item>Now we ’ll discuss the relationship between education and work.</item>
+        <item>1. How important is it to have a university education to get a job in your country? \n</item>
+        <item>2. Does having a degree from another country enhance employment opportunities in your country? \n</item>
+        <item>3. What impacts do students who have studies abroad have on their country of origin when they come home? \n</item>
+
+        <item> Great! You’re at Level 4. (Click Next)</item>
+        <item>We ’ve been talking about a teacher who has influenced you in your education, and I ’d now like to ask you some questions related to this.</item>
+        <item>First, we ’ll look at developments in education.</item>
+        <item>1. Has education in your country changed in the last 10 years?</item>
+        <item>2. What changes do you think will happen in the future?</item>
+        <item>3. What changes would you recommend to improve the education system?</item>
+        <item>Now let ’s look at the national education system.</item>
+        <item>1. How do the ambitions of current school leavers compare with those of the previous generation?</item>
+        <item>2. What role do you think extracurricular activities play in education?</item>
+        <item>3. What is the role of the school in modern society?</item>
+
+        <item> Great! You’re at Level 5. (Click Next)</item>
+        <item>We ’ve been talking about an environmental problem in your country, and I ’d now like to ask you some questions related to this.</item>
+        <item>First, lets consider global environmental problems.</item>
+        <item>1. Tell me about some of the environmental problems that are affecting countries these days?</item>
+        <item>2. Do you think that governments around the world are doing enough to tackle the problems?</item>
+        <item>3. Why do some people not consider environmental problems to be serious?</item>
+        <item>Now we ’ll look at environmental problems and disasters caused by humans.</item>
+        <item>1. What do you consider to be the world’s worst environmental disaster caused by humans?</item>
+        <item>2. Why do you think environmental disasters caused by humans happen?</item>
+        <item>3. Do you think there will be more environmental disasters caused by humans in the future?</item>
+
+
+        <!-- Add more questions as needed -->
+    </string-array>
+
+
+    <string-array name="asian_country_codes">
+        <item>Click to Select</item>
+        <item>+880 (Bangladesh)</item>
+        <item>+93 (Afghanistan)</item>
+        <item>+91 (India)</item>
+        <item>+86 (China)</item>
+        <item>+62 (Indonesia)</item>
+        <!-- Add more Asian country codes as needed -->
+    </string-array>
+
+    <string name="image_description" translatable="false">Description of the image</string>
+    <string name="click2speak" translatable="false">Click and Speak</string>
+    <string name="title_activity_login" translatable="false">LoginActivity</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in_short" translatable="false">Sign in</string>
+    <string name="welcome" translatable="false">"Welcome !"</string>
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password" translatable="false">Password must be >5 characters</string>
+    <string name="login_failed" translatable="false">"Login failed"</string>
+
+
+</resources>
