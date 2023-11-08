@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Create six elevated buttons -->
+            <!-- Create six elevated ex buttons -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
