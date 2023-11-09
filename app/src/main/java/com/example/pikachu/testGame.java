@@ -17,6 +17,9 @@ public class testGame extends AppCompatActivity {
     private String[] arrayC = {"Sun", "Sky", "Cloud"};
     private String[] arrayD = {"Moon", "Star", "Night"};
 
+    private String[] currentArray1;
+    private String[] currentArray2;
+
     private Button button1s1, buttons2, buttons3, buttons4;
     private Button button1a1, buttonsa2, buttonsa3;
     private TextView scoreText; // TextView for displaying the score
@@ -24,6 +27,8 @@ public class testGame extends AppCompatActivity {
     private List<Integer> s1Indices, a2Indices;
     private Button selectedS1, selectedA2;
     private int score = 0; // Variable to store the score
+
+    private int currentSet = 1; // 1 for arrayA1 and arrayA2, 2 for arrayC and arrayD
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +49,13 @@ public class testGame extends AppCompatActivity {
         s1Indices = new ArrayList<>();
         a2Indices = new ArrayList<>();
 
+        // Set initial arrays
+        currentArray1 = arrayA1;
+        currentArray2 = arrayA2;
+
         // Populate lists with indices
-        for (int i = 0; i < arrayC.length; i++) {
+        for (int i = 0; i < currentArray1.length; i++) {
             s1Indices.add(i);
-        }
-        for (int i = 0; i < arrayD.length; i++) {
             a2Indices.add(i);
         }
 
@@ -57,13 +64,13 @@ public class testGame extends AppCompatActivity {
         Collections.shuffle(a2Indices);
 
         // Set text on buttons
-        button1s1.setText(arrayC[s1Indices.get(0)]);
-        buttons2.setText(arrayC[s1Indices.get(1)]);
-        buttons3.setText(arrayC[s1Indices.get(2)]);
+        button1s1.setText(currentArray1[s1Indices.get(0)]);
+        buttons2.setText(currentArray1[s1Indices.get(1)]);
+        buttons3.setText(currentArray1[s1Indices.get(2)]);
 
-        button1a1.setText(arrayD[a2Indices.get(0)]);
-        buttonsa2.setText(arrayD[a2Indices.get(1)]);
-        buttonsa3.setText(arrayD[a2Indices.get(2)]);
+        button1a1.setText(currentArray2[a2Indices.get(0)]);
+        buttonsa2.setText(currentArray2[a2Indices.get(1)]);
+        buttonsa3.setText(currentArray2[a2Indices.get(2)]);
 
         // Button click listeners
         button1s1.setOnClickListener(buttonClickListener);
@@ -101,11 +108,12 @@ public class testGame extends AppCompatActivity {
                     updateScore();
 
                     // Remove matched words from arrays
-                    arrayC[s1Indices.get(getButtonIndex(selectedS1))] = "";
-                    arrayD[a2Indices.get(getButtonIndex(selectedA2))] = "";
+                    currentArray1[s1Indices.get(getButtonIndex(selectedS1))] = "";
+                    currentArray2[a2Indices.get(getButtonIndex(selectedA2))] = "";
 
                     // Check if all words are matched, then reset with new words
                     if (isAllMatched()) {
+                        switchToNextSet();
                         resetWithNewWords();
                     }
                 } else {
@@ -135,12 +143,12 @@ public class testGame extends AppCompatActivity {
 
     private boolean isAllMatched() {
         // Check if all words are matched
-        for (String word : arrayC) {
+        for (String word : currentArray1) {
             if (!word.isEmpty()) {
                 return false;
             }
         }
-        for (String word : arrayD) {
+        for (String word : currentArray2) {
             if (!word.isEmpty()) {
                 return false;
             }
@@ -148,16 +156,29 @@ public class testGame extends AppCompatActivity {
         return true;
     }
 
+    private void switchToNextSet() {
+        // Switch to the next set of words
+        if (currentSet == 1) {
+            currentArray1 = arrayC;
+            currentArray2 = arrayD;
+            currentSet = 2;
+        } else {
+            currentArray1 = arrayA1;
+            currentArray2 = arrayA2;
+            currentSet = 1;
+        }
+    }
+
     private void resetWithNewWords() {
-        // Reset with new words from arrays C and D
+        // Reset with new words from the current arrays
 
         // Populate lists with indices
         s1Indices.clear();
         a2Indices.clear();
-        for (int i = 0; i < arrayC.length; i++) {
+        for (int i = 0; i < currentArray1.length; i++) {
             s1Indices.add(i);
         }
-        for (int i = 0; i < arrayD.length; i++) {
+        for (int i = 0; i < currentArray2.length; i++) {
             a2Indices.add(i);
         }
 
@@ -166,12 +187,12 @@ public class testGame extends AppCompatActivity {
         Collections.shuffle(a2Indices);
 
         // Set text on buttons
-        button1s1.setText(arrayC[s1Indices.get(0)]);
-        buttons2.setText(arrayC[s1Indices.get(1)]);
-        buttons3.setText(arrayC[s1Indices.get(2)]);
+        button1s1.setText(currentArray1[s1Indices.get(0)]);
+        buttons2.setText(currentArray1[s1Indices.get(1)]);
+        buttons3.setText(currentArray1[s1Indices.get(2)]);
 
-        button1a1.setText(arrayD[a2Indices.get(0)]);
-        buttonsa2.setText(arrayD[a2Indices.get(1)]);
-        buttonsa3.setText(arrayD[a2Indices.get(2)]);
+        button1a1.setText(currentArray2[a2Indices.get(0)]);
+        buttonsa2.setText(currentArray2[a2Indices.get(1)]);
+        buttonsa3.setText(currentArray2[a2Indices.get(2)]);
     }
 }
