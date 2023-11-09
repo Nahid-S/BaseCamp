@@ -25,7 +25,7 @@ public class gptv2 extends AppCompatActivity {
         webView3.setWebViewClient(new MyWebViewClient());
 
         // Load your initial URL
-        webView3.loadUrl("https://ielts.aspen-bd.com/");
+        webView3.loadUrl("https://ielts.mrperfect.lol/category/");
     }
 
     // Custom WebViewClient to handle URL loading within the WebView

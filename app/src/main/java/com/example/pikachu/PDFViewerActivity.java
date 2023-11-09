@@ -1,4 +1,4 @@
-//package com.example.pikachu;
+package com.example.pikachu;
 //
 //import androidx.appcompat.app.AppCompatActivity;
 //

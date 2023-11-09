@@ -2,7 +2,6 @@ package com.example.pikachu;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -22,11 +21,17 @@ public class chatGuru extends AppCompatActivity {
         WebSettings webSettings = webView3.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
+        // Set initial scale to 70%
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setUseWideViewPort(true);
+
         // Set a custom WebViewClient to handle URL loading within the WebView
-        webView3.setWebViewClient(new chatGuru.MyWebViewClient());
+        webView3.setWebViewClient(new MyWebViewClient());
 
         // Load your initial URL
         webView3.loadUrl("https://basecampstudy.co.uk/new_b/");
+        //webView3.loadUrl("https://ielts.mrperfect.lol/chat_b/");
+
     }
 
     // Custom WebViewClient to handle URL loading within the WebView
@@ -38,6 +43,9 @@ public class chatGuru extends AppCompatActivity {
             return true;
         }
     }
+}
+
+
 
 //    @Override
 //    public void onBackPressed() {
@@ -45,6 +53,6 @@ public class chatGuru extends AppCompatActivity {
 //            webView3.goBack();
 //        } else {
 //            super.onBackPressed();
-//        }
-//    }
-}
+////        }
+////    }
+//}

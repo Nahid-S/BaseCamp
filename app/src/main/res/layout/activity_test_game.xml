@@ -28,7 +28,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You're At Level 2"
+        android:text="You're At Level 1"
         android:gravity="center"
         android:textSize="24sp"
         android:textColor="@color/black"

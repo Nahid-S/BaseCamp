@@ -23,7 +23,7 @@ public class nwgrammar extends AppCompatActivity {
         webView3.setWebViewClient(new nwgrammar.MyWebViewClient());
 
         // Load your initial URL
-        webView3.loadUrl("https://ielts.aspen-bd.com/");
+        webView3.loadUrl("https://ielts.mrperfect.lol/grammar_check_view/");
     }
 
     // Custom WebViewClient to handle URL loading within the WebView
