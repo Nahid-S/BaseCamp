@@ -14,6 +14,8 @@ public class testGame extends AppCompatActivity {
 
     private String[] arrayA1 = {"Apple", "Drink", "Paper"};
     private String[] arrayA2 = {"Tree", "Glass", "Rock"};
+    private String[] arrayC = {"Sun", "Sky", "Cloud"};
+    private String[] arrayD = {"Moon", "Star", "Night"};
 
     private Button button1s1, buttons2, buttons3, buttons4;
     private Button button1a1, buttonsa2, buttonsa3;
@@ -43,8 +45,10 @@ public class testGame extends AppCompatActivity {
         a2Indices = new ArrayList<>();
 
         // Populate lists with indices
-        for (int i = 0; i < arrayA1.length; i++) {
+        for (int i = 0; i < arrayC.length; i++) {
             s1Indices.add(i);
+        }
+        for (int i = 0; i < arrayD.length; i++) {
             a2Indices.add(i);
         }
 
@@ -53,13 +57,13 @@ public class testGame extends AppCompatActivity {
         Collections.shuffle(a2Indices);
 
         // Set text on buttons
-        button1s1.setText(arrayA1[s1Indices.get(0)]);
-        buttons2.setText(arrayA1[s1Indices.get(1)]);
-        buttons3.setText(arrayA1[s1Indices.get(2)]);
+        button1s1.setText(arrayC[s1Indices.get(0)]);
+        buttons2.setText(arrayC[s1Indices.get(1)]);
+        buttons3.setText(arrayC[s1Indices.get(2)]);
 
-        button1a1.setText(arrayA2[a2Indices.get(0)]);
-        buttonsa2.setText(arrayA2[a2Indices.get(1)]);
-        buttonsa3.setText(arrayA2[a2Indices.get(2)]);
+        button1a1.setText(arrayD[a2Indices.get(0)]);
+        buttonsa2.setText(arrayD[a2Indices.get(1)]);
+        buttonsa3.setText(arrayD[a2Indices.get(2)]);
 
         // Button click listeners
         button1s1.setOnClickListener(buttonClickListener);
@@ -95,6 +99,15 @@ public class testGame extends AppCompatActivity {
                     Toast.makeText(testGame.this, "Correct Match!", Toast.LENGTH_SHORT).show();
                     score++; // Increment score for a correct match
                     updateScore();
+
+                    // Remove matched words from arrays
+                    arrayC[s1Indices.get(getButtonIndex(selectedS1))] = "";
+                    arrayD[a2Indices.get(getButtonIndex(selectedA2))] = "";
+
+                    // Check if all words are matched, then reset with new words
+                    if (isAllMatched()) {
+                        resetWithNewWords();
+                    }
                 } else {
                     Toast.makeText(testGame.this, "Not a Match!", Toast.LENGTH_SHORT).show();
                 }
@@ -118,5 +131,47 @@ public class testGame extends AppCompatActivity {
 
     private void updateScore() {
         scoreText.setText("Score: " + score);
+    }
+
+    private boolean isAllMatched() {
+        // Check if all words are matched
+        for (String word : arrayC) {
+            if (!word.isEmpty()) {
+                return false;
+            }
+        }
+        for (String word : arrayD) {
+            if (!word.isEmpty()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private void resetWithNewWords() {
+        // Reset with new words from arrays C and D
+
+        // Populate lists with indices
+        s1Indices.clear();
+        a2Indices.clear();
+        for (int i = 0; i < arrayC.length; i++) {
+            s1Indices.add(i);
+        }
+        for (int i = 0; i < arrayD.length; i++) {
+            a2Indices.add(i);
+        }
+
+        // Shuffle the lists to randomize the order
+        Collections.shuffle(s1Indices);
+        Collections.shuffle(a2Indices);
+
+        // Set text on buttons
+        button1s1.setText(arrayC[s1Indices.get(0)]);
+        buttons2.setText(arrayC[s1Indices.get(1)]);
+        buttons3.setText(arrayC[s1Indices.get(2)]);
+
+        button1a1.setText(arrayD[a2Indices.get(0)]);
+        buttonsa2.setText(arrayD[a2Indices.get(1)]);
+        buttonsa3.setText(arrayD[a2Indices.get(2)]);
     }
 }
