@@ -11,12 +11,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class testGame extends AppCompatActivity {
+public class NextLevel2 extends AppCompatActivity {
 
-    private String[] arrayA1 = {"Apple", "Drink", "Paper"};
-    private String[] arrayA2 = {"Tree", "Glass", "Rock"};
-    private String[] arrayC = {"Sun", "Sky", "Cloud"};
-    private String[] arrayD = {"Moon", "Star", "Night"};
+    private String[] arrayA1 = {"A1", "A2", "A3"};
+    private String[] arrayA2 = {"B1", "B2", "B4"};
+    private String[] arrayC = {"C1", "C2", "C3"};
+    private String[] arrayD = {"D1", "D2", "D3"};
 
     private String[] currentArray1;
     private String[] currentArray2;
@@ -35,9 +35,8 @@ public class testGame extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_game);
-
-        // Initialize buttons
+        setContentView(R.layout.activity_next_level2);
+// Initialize buttons
         button1s1 = findViewById(R.id.button1s1);
         buttons2 = findViewById(R.id.buttons2);
         buttons3 = findViewById(R.id.buttons3);
@@ -93,7 +92,7 @@ public class testGame extends AppCompatActivity {
 
             // Check if this button is already selected
             if (clickedButton == selectedS1 || clickedButton == selectedA2) {
-                Toast.makeText(testGame.this, "Don't repeat the same button.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(NextLevel2.this, "Don't repeat the same button.", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -105,7 +104,7 @@ public class testGame extends AppCompatActivity {
                 int indexA2 = a2Indices.get(getButtonIndex(selectedA2));
 
                 if (indexS1 == indexA2) {
-                    Toast.makeText(testGame.this, "Correct Match!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NextLevel2.this, "Correct Match!", Toast.LENGTH_SHORT).show();
                     score++; // Increment score for a correct match
                     updateScore();
 
@@ -119,7 +118,7 @@ public class testGame extends AppCompatActivity {
                         resetWithNewWords();
                     }
                 } else {
-                    Toast.makeText(testGame.this, "Not a Match!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NextLevel2.this, "Not a Match!", Toast.LENGTH_SHORT).show();
                 }
 
                 selectedS1 = null;
@@ -204,7 +203,7 @@ public class testGame extends AppCompatActivity {
             if (cycleCount == 2) {
                 switchToNextSet();
                 // Start new activity
-                startActivity(new Intent(testGame.this, NextLevel2.class));
+                startActivity(new Intent(NextLevel2.this, NextLevel3.class));
                 finish(); // finish the current activity
             } else {
                 switchToNextSet();

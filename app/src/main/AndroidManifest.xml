@@ -17,6 +17,12 @@
         android:theme="@style/Theme.Pikachu"
         tools:targetApi="31">
         <activity
+            android:name=".NextLevel3"
+            android:exported="false" />
+        <activity
+            android:name=".NextLevel2"
+            android:exported="false" />
+        <activity
             android:name=".testGame"
             android:exported="false" />
         <activity
