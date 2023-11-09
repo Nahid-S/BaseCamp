@@ -59,7 +59,7 @@ public class menu1 extends AppCompatActivity {
     }
 
     public void chatsupp(View view) {
-        String phoneNumber = "8801521448442";
+        String phoneNumber = "8801707274452";
         Uri gmmIntentUri = Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber);
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         mapIntent.setPackage("com.whatsapp");
