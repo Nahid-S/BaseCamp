@@ -59,7 +59,7 @@ public class menu1 extends AppCompatActivity {
     }
 
     public void chatsupp(View view) {
-        String phoneNumber = "8801707274452";
+        String phoneNumber = "8801776688020";
         Uri gmmIntentUri = Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber);
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         mapIntent.setPackage("com.whatsapp");
@@ -69,7 +69,7 @@ public class menu1 extends AppCompatActivity {
         } else {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber));
             startActivity(intent);
-            Toast.makeText(this, "WhatsApp not available. Opening in browser...", Toast.LENGTH_SHORT).show(); //next time
+            Toast.makeText(this, "Opening Please Wait...", Toast.LENGTH_SHORT).show(); //next time
         }
     }
 
