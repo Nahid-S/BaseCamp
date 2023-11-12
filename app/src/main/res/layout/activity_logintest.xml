@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".logintest">
 
-
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -35,8 +33,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout"
                 android:layout_width="349dp"
@@ -48,8 +44,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0">
-
-
 
                 <TextView
                     android:id="@+id/textView5"
@@ -81,7 +75,6 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView5"
                     app:layout_constraintVertical_bias="0.911" />
 
-
                 <EditText
                     android:id="@+id/phone"
                     android:layout_width="304dp"
@@ -101,9 +94,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView5"
                     app:layout_constraintVertical_bias="0.657" />
 
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-
 
             <Button
                 android:id="@+id/btngenerateOTP"
@@ -174,7 +165,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/otp"
                 app:layout_constraintVertical_bias="1.0" />
 
-
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
@@ -190,11 +180,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
     </ScrollView>
     <LinearLayout
@@ -228,6 +214,5 @@
             android:textSize="16sp" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
