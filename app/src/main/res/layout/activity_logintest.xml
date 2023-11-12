@@ -69,10 +69,10 @@
                     android:id="@+id/countryCodeSpinner"
                     style="@style/SpinnerTextStyle"
                     android:layout_width="match_parent"
-                    android:layout_height="29dp"
+                    android:layout_height="48dp"
                     android:layout_margin="25dp"
-                    android:gravity="center"
                     android:background="@drawable/customdrop4"
+                    android:gravity="center"
                     android:theme="@style/SpinnerDropdownStyle"
                     app:layout_constraintBottom_toTopOf="@+id/phone"
                     app:layout_constraintEnd_toEndOf="@+id/phone"
@@ -175,7 +175,6 @@
                 app:layout_constraintVertical_bias="1.0" />
 
 
-
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
@@ -188,7 +187,8 @@
                 app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
                 app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
                 app:layout_constraintStart_toStartOf="@+id/constraintLayout"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
 
 
 
