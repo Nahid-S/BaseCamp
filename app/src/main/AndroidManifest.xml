@@ -17,6 +17,12 @@
         android:theme="@style/Theme.Pikachu"
         tools:targetApi="31">
         <activity
+            android:name=".parapharase"
+            android:exported="false" />
+        <activity
+            android:name=".testgal"
+            android:exported="false" />
+        <activity
             android:name=".PDFViewerActivity"
             android:exported="false" />
         <activity

@@ -18,4 +18,14 @@ public class nwwritingmenu extends AppCompatActivity {
         Intent intent = new Intent(nwwritingmenu.this, gptv2.class);
         startActivity(intent);
     }
+
+    public void ghost(View view) {
+        Intent intent = new Intent(nwwritingmenu.this, ghost.class);
+        startActivity(intent);
+    }
+
+    public void paraf(View view) {
+        Intent intent = new Intent(nwwritingmenu.this, parapharase.class);
+        startActivity(intent);
+    }
 }
