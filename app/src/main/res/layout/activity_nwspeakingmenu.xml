@@ -65,7 +65,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Part 1"
+                        android:text="Mock Test 1"
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:gravity="center"
@@ -103,7 +103,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Part 2"
+                        android:text="Mock Test 2"
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:gravity="center"
@@ -141,7 +141,44 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Part 3"
+                        android:text="Mock Test 3"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:padding="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:backgroundTint="@color/pred"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:padding="7dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/radio_1"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="More will be added soon"
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:gravity="center"
