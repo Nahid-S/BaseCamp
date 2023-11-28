@@ -5,13 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+
 
 public class bookrl1 extends AppCompatActivity {
 
-    private WebView webView4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +21,11 @@ public class bookrl1 extends AppCompatActivity {
 
     public void booktotest(View view) {
         Intent intent = new Intent(bookrl1.this, codetest.class);
+        startActivity(intent);
+    }
+
+    public void goflip(View view) {
+        Intent intent = new Intent(bookrl1.this, flipbook1.class);
         startActivity(intent);
     }
 }
