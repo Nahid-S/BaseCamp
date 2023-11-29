@@ -1,58 +1,94 @@
 package com.example.pikachu;
 
+import androidx.activity.OnBackPressedCallback;
+import androidx.activity.OnBackPressedDispatcher;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class chatGuru extends AppCompatActivity {
 
-    private WebView webView3;
+    private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_guru);
 
-        webView3 = findViewById(R.id.webviewguru);
-
-        // Enable JavaScript (optional)
-        WebSettings webSettings = webView3.getSettings();
+        webView = findViewById(R.id.webflip);
+        WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
 
-        // Set initial scale to 70%
-        webSettings.setLoadWithOverviewMode(true);
-        webSettings.setUseWideViewPort(true);
+        // Disable zoom controls
+        webSettings.setBuiltInZoomControls(false);
+        webSettings.setDisplayZoomControls(false);
 
-        // Set a custom WebViewClient to handle URL loading within the WebView
-        webView3.setWebViewClient(new MyWebViewClient());
+        webView.loadUrl("https://dev.basecampstudy.co.uk/gramguru/");
 
-        // Load your initial URL
-        webView3.loadUrl("https://dev.basecampstudy.co.uk/gramguru/");
-        //webView3.loadUrl("https://ielts.mrperfect.lol/chat_b/");
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    view.loadUrl(request.getUrl().toString());
+                }
+                return true;
+            }
+        });
 
+        // Handle onBackPressed using OnBackPressedCallback
+        OnBackPressedCallback callback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (webView.canGoBack()) {
+                    webView.goBack();
+                } else {
+                    // If the WebView cannot go back, navigate to MainActivity and finish this activity
+                    finish();
+                }
+            }
+        };
+
+        // Add the callback to the OnBackPressedDispatcher
+        OnBackPressedDispatcher onBackPressedDispatcher = getOnBackPressedDispatcher();
+        onBackPressedDispatcher.addCallback(this, callback);
     }
 
-    // Custom WebViewClient to handle URL loading within the WebView
-    private class MyWebViewClient extends WebViewClient {
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            // Load the URL within the WebView
-            view.loadUrl(url);
-            return true;
+    @Override
+    protected void onDestroy() {
+        if (webView != null) {
+            webView.stopLoading();
+            webView.onPause();
+            webView.clearCache(true);
+            webView.clearHistory();
+            webView.destroy();
+            webView = null;
+        }
+
+        super.onDestroy();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (webView.canGoBack()) {
+            webView.goBack();
+        } else {
+            super.onBackPressed();
         }
     }
+
+    public void home(View view) {
+        Intent intent = new Intent(chatGuru.this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
+    }
 }
-
-
-
-//    @Override
-//    public void onBackPressed() {
-//        if (webView3.canGoBack()) {
-//            webView3.goBack();
-//        } else {
-//            super.onBackPressed();
-////        }
-////    }
-//}

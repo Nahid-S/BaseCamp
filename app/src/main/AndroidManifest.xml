@@ -58,7 +58,7 @@
         <activity
             android:name=".chatGuru"
             android:exported="false"
-            android:windowSoftInputMode="adjustPan" />
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".nwgrammar"
             android:exported="false" />
