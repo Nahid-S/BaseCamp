@@ -29,7 +29,7 @@ public class chatGuru extends AppCompatActivity {
         webView3.setWebViewClient(new MyWebViewClient());
 
         // Load your initial URL
-        webView3.loadUrl("https://basecampstudy.co.uk/new_b/");
+        webView3.loadUrl("https://dev.basecampstudy.co.uk/gramguru/");
         //webView3.loadUrl("https://ielts.mrperfect.lol/chat_b/");
 
     }

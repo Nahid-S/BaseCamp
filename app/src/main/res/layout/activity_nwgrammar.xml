@@ -24,13 +24,25 @@
         android:contentDescription="TODO"
         tools:ignore="ContentDescription,HardcodedText" />
 
-    <WebView
-        android:id="@+id/webviewGRA"
+    <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="10dp"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="23dp"
+        android:outlineSpotShadowColor="@color/pred"
+        android:outlineAmbientShadowColor="@color/pred"
+        android:elevation="9dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <WebView
+            android:id="@+id/webviewGRA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
