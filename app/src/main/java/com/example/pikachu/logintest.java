@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
@@ -35,6 +36,8 @@ public class logintest extends AppCompatActivity {
     TextView loadingText;
     LinearLayout mainlay;
 
+    ImageView loadinglogo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +59,7 @@ public class logintest extends AppCompatActivity {
         mainlay = findViewById(R.id.layoutload1);
         loadingProgressBar = findViewById(R.id.loadingProgressBar);
         loadingText = findViewById(R.id.loadingText);
+        loadinglogo = findViewById(R.id.loadpic);
 
         // Get the array of Asian country codes with names from resources
         String[] countryCodesWithNames = getResources().getStringArray(R.array.asian_country_codes);
@@ -79,6 +83,7 @@ public class logintest extends AppCompatActivity {
                     // Show loading indicator
                     loadingProgressBar.setVisibility(View.VISIBLE);
                     loadingText.setVisibility(View.VISIBLE);
+                    loadinglogo.setVisibility(View.VISIBLE);
                     mainlay.setVisibility(View.VISIBLE);
                     // Split the selected item to get the country code part
                     String[] parts = selectedCountryCodeWithSpace.split(" ");
@@ -98,6 +103,7 @@ public class logintest extends AppCompatActivity {
                     // Show loading indicator
                     loadingProgressBar.setVisibility(View.VISIBLE);
                     loadingText.setVisibility(View.VISIBLE);
+                    loadinglogo.setVisibility(View.VISIBLE);
                     mainlay.setVisibility(View.VISIBLE);
 
                     verifyCode(code);
@@ -126,6 +132,7 @@ public class logintest extends AppCompatActivity {
     private void hideLoadingIndicator() {
         loadingProgressBar.setVisibility(View.GONE);
         loadingText.setVisibility(View.GONE);
+        loadinglogo.setVisibility(View.GONE);
         mainlay.setVisibility(View.GONE);
     }
 

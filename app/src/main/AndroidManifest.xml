@@ -17,6 +17,21 @@
         android:theme="@style/Theme.Pikachu"
         tools:targetApi="31">
         <activity
+            android:name=".wpMatchgame"
+            android:exported="false" />
+        <activity
+            android:name=".wpFlashcard"
+            android:exported="false" />
+        <activity
+            android:name=".wpQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".wpCrossword"
+            android:exported="false" />
+        <activity
+            android:name=".wpGame"
+            android:exported="false" />
+        <activity
             android:name=".wpListenMenu"
             android:exported="false" />
         <activity
@@ -86,7 +101,7 @@
         <activity
             android:name=".logintest"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".voice"
             android:exported="false" />
