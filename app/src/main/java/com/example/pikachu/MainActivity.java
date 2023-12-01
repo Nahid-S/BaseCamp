@@ -54,28 +54,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void gotopdf1(View view) {
-        Intent intent = new Intent(MainActivity.this, pdf1.class);
-        startActivity(intent);
-    }
-
-    public void writingques(View view) {
-        Intent intent = new Intent(MainActivity.this, gptv2.class);
-        startActivity(intent);
-    }
-
     public void gotest(View view) {
         Intent intent = new Intent(MainActivity.this, ghost.class);
-        startActivity(intent);
-    }
-
-    public void audiobook(View view) {
-        Intent intent = new Intent(MainActivity.this, audiobook.class);
-        startActivity(intent);
-    }
-
-    public void dovoice(View view) {
-        Intent intent = new Intent(MainActivity.this, voice.class);
         startActivity(intent);
     }
 
@@ -115,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gotestgame(View view) {
-        Intent intent = new Intent(MainActivity.this, testGame.class);
+        Intent intent = new Intent(MainActivity.this, wpGame.class);
         startActivity(intent);
     }
 }

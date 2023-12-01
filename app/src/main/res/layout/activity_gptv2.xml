@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:background="#FFFFFF"
     tools:context=".gptv2">
 
@@ -28,22 +29,39 @@
         app:lottie_autoPlay="true"
         app:lottie_repeatCount="5"
         app:lottie_rawRes="@raw/robotanim"
-        app:layout_constraintBottom_toTopOf="@+id/webv3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <WebView
-        android:id="@+id/webv3"
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="100dp"
-        android:background="@color/white"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="9dp"
+            android:layout_margin="24dp"
+            app:cardCornerRadius="23dp"
+            android:outlineAmbientShadowColor="@color/pred"
+            android:outlineSpotShadowColor="@color/pred">
+
+            <WebView
+                android:id="@+id/webv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
