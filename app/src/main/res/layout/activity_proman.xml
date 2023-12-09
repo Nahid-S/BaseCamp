@@ -50,6 +50,8 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="Pronounce"
+            android:clickable="true"
+            android:foreground="@drawable/red_ripples"
             android:layout_marginTop="25dp"
             android:background="@drawable/customdrop5"/>
 
@@ -65,6 +67,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Slow"
+                android:clickable="true"
+                android:foreground="@drawable/red_ripples"
                 android:background="@drawable/customdrop5"
                 android:layout_marginRight="10dp"/>
 
@@ -73,6 +77,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Normal"
+                android:clickable="true"
+                android:foreground="@drawable/red_ripples"
                 android:background="@drawable/customdrop5"
                 android:layout_marginRight="10dp"/>
 
@@ -81,6 +87,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fast"
+                android:clickable="true"
+                android:foreground="@drawable/red_ripples"
                 android:background="@drawable/customdrop5"
                 android:layout_marginRight="10dp"/>
         </LinearLayout>
@@ -97,6 +105,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="English"
+                android:clickable="true"
+                android:foreground="@drawable/red_ripples"
                 android:background="@drawable/customdrop5"
                 android:layout_marginRight="10dp"/>
 
@@ -105,6 +115,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="British"
+                android:clickable="true"
+                android:foreground="@drawable/red_ripples"
                 android:background="@drawable/customdrop5"
                 android:layout_marginEnd="10dp"
                 tools:ignore="ButtonStyle" />
@@ -114,6 +126,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="India"
+                android:clickable="true"
+                android:foreground="@drawable/red_ripples"
                 android:background="@drawable/customdrop5"
                 android:layout_marginRight="10dp"/>
         </LinearLayout>

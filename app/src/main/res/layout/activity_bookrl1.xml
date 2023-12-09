@@ -54,6 +54,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="goflip"
+                    android:clickable="true"
+                    android:foreground="@drawable/red_ripple"
                     android:background="@color/white"
                     android:src="@drawable/bookpage" />
 
@@ -62,6 +64,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="@drawable/red_ripple"
                     android:layout_marginTop="8dp"
                     android:background="@color/white"
                     android:src="@drawable/bookpage"/>
@@ -71,6 +75,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="@drawable/red_ripple"
                     android:src="@drawable/bookpage"
                     android:background="@color/white"/>
             </LinearLayout>
@@ -138,6 +144,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="@drawable/red_ripple"
                     android:src="@drawable/bookpage"
                     android:background="@color/white" />
 
@@ -146,6 +154,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="@drawable/red_ripple"
                     android:src="@drawable/bookpage"
                     android:background="@color/white"/>
 
@@ -154,6 +164,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="@drawable/red_ripple"
                     android:src="@drawable/bookpage"
                     android:onClick="booktotest"
                     android:background="@color/white"/>

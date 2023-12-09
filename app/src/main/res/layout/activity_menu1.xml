@@ -49,6 +49,8 @@
                 android:layout_height="140dp"
                 android:padding="20dp"
                 android:onClick="chatsupp"
+                android:clickable="true"
+                android:foreground="@drawable/red_ripples"
                 android:background="@drawable/customdrop5"
                 android:orientation="horizontal">
 
@@ -156,6 +158,8 @@
                 android:layout_height="118dp"
                 android:layout_marginTop="20dp"
                 android:onClick="openmap"
+                android:clickable="true"
+                android:foreground="@drawable/red_ripples"
                 android:background="@drawable/customdrop5"
                 android:orientation="horizontal">
 
@@ -217,6 +221,8 @@
                     android:layout_margin="25dp"
                     android:layout_weight="1"
                     android:onClick="openweb"
+                    android:clickable="true"
+                    android:foreground="@drawable/red_ripples"
                     app:lottie_autoPlay="true"
                     tools:ignore="SpeakableTextPresentCheck"
                     app:lottie_repeatCount="5"
@@ -230,6 +236,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/customdrop5"
                     android:onClick="openfb"
+                    android:clickable="true"
+                    android:foreground="@drawable/red_ripples"
                     app:lottie_autoPlay="true"
                     app:lottie_rawRes="@raw/facebookanim"
                     app:lottie_repeatCount="5"
@@ -244,6 +252,8 @@
                     android:onClick="openlinkedin"
                     app:lottie_autoPlay="true"
                     app:lottie_repeatCount="5"
+                    android:clickable="true"
+                    android:foreground="@drawable/red_ripples"
                     tools:ignore="SpeakableTextPresentCheck"
                     app:lottie_rawRes="@raw/linkedinanim"
                     android:background="@drawable/customdrop5" />
@@ -261,7 +271,6 @@
                     android:layout_margin="30dp"
                     android:layout_weight="1"
                     android:background="@drawable/customdrop5"
-                    android:onClick="update"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.23"
@@ -269,6 +278,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.63"
                     app:lottie_autoPlay="true"
+                    android:clickable="true"
+                    android:foreground="@drawable/red_ripples"
                     app:lottie_rawRes="@raw/updateanim"
                     app:lottie_repeatCount="5"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -279,7 +290,8 @@
                     android:layout_margin="30dp"
                     android:layout_weight="1"
                     android:background="@drawable/customdrop5"
-                    android:onClick="update"
+                    android:clickable="true"
+                    android:foreground="@drawable/red_ripples"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.38"

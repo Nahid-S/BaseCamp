@@ -3,7 +3,7 @@
     <style name="Base.Theme.Pikachu" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowTranslucentStatus">true</item>
-        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimary">@color/pred</item>
         <item name="android:statusBarColor">#DC0E42</item>
 
     </style>

@@ -4,64 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
     tools:context=".gptv2">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/customdrop"
         android:padding="5dp"
         android:src="@drawable/mainlogom01"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottieAnimationView"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:lottie_autoPlay="true"
-        app:lottie_repeatCount="5"
-        app:lottie_rawRes="@raw/robotanim"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:contentDescription="@string/click2speak" />
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:fillViewport="true"
-        android:fitsSystemWindows="true"
+        android:layout_marginTop="9dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:elevation="9dp"
-            android:layout_margin="24dp"
-            app:cardCornerRadius="23dp"
-            android:outlineAmbientShadowColor="@color/pred"
-            android:outlineSpotShadowColor="@color/pred">
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/imageView">
 
             <WebView
                 android:id="@+id/webv3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/white" />
-
-        </androidx.cardview.widget.CardView>
+                android:layout_height="match_parent" />
 
     </ScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
