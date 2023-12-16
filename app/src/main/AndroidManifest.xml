@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Pikachu"
         tools:targetApi="31">
         <activity
+            android:name=".bookA1"
+            android:exported="false" />
+        <activity
             android:name=".nwwritingMock"
             android:exported="false" />
         <activity
