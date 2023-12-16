@@ -42,7 +42,7 @@ public class audiobook extends AppCompatActivity {
             webView.goBack();
         } else {
             // If the WebView cannot go back, navigate to MainActivity and finish this activity
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, wpListenMenu.class);
             startActivity(intent);
             finish();
         }

@@ -12,13 +12,14 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class wpListeningTest extends AppCompatActivity {
+public class readMock extends AppCompatActivity {
 
     private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_read_mock);
         setContentView(R.layout.activity_wp_listening_test);
         webView = findViewById(R.id.webflip);
         WebSettings webSettings = webView.getSettings();
@@ -30,7 +31,7 @@ public class wpListeningTest extends AppCompatActivity {
         webSettings.setBuiltInZoomControls(false);
         webSettings.setDisplayZoomControls(false);
 
-        webView.loadUrl("https://myenglish.basecampstudy.co.uk/listening-mock-test-menu/");
+        webView.loadUrl("https://myenglish.basecampstudy.co.uk/reading-mock-test-app/");
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -75,7 +76,7 @@ public class wpListeningTest extends AppCompatActivity {
     }
 
     public void home(View view) {
-        Intent intent = new Intent(wpListeningTest.this, nwlisetenmenu.class);
+        Intent intent = new Intent(readMock.this, menu2.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();

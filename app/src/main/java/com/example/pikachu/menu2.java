@@ -25,4 +25,8 @@ public class menu2 extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void readmock1(View view) {
+        Intent intent = new Intent(menu2.this, readMock.class);
+        startActivity(intent);
+    }
 }

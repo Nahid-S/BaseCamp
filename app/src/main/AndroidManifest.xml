@@ -17,6 +17,12 @@
         android:theme="@style/Theme.Pikachu"
         tools:targetApi="31">
         <activity
+            android:name=".nwwritingMock"
+            android:exported="false" />
+        <activity
+            android:name=".readMock"
+            android:exported="false" />
+        <activity
             android:name=".wpMatchgame"
             android:exported="false" />
         <activity

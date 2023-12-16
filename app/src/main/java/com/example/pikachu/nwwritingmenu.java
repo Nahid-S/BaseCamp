@@ -28,4 +28,9 @@ public class nwwritingmenu extends AppCompatActivity {
         Intent intent = new Intent(nwwritingmenu.this, parapharase.class);
         startActivity(intent);
     }
+
+    public void writingMock(View view) {
+        Intent intent = new Intent(nwwritingmenu.this, nwwritingMock.class);
+        startActivity(intent);
+    }
 }
